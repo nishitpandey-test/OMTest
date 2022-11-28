@@ -18,7 +18,7 @@ namespace OmTest
         {
             SqlConnection con = new SqlConnection(sConnectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from TestTable", con);
+            SqlCommand cmd = new SqlCommand("select * from TestTable Sita-Ram", con);
             SqlDataReader rdr = cmd.ExecuteReader();
             GridView1.DataSource = rdr;
             GridView1.DataBind();
